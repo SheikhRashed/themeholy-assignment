@@ -6,13 +6,7 @@ $utilities: map-merge(
       property: font-size,
       class: fs,
       values: map-merge($font-sizes, (
-      "12px": .75rem,
-       "14px": .875rem,
-       "16px": 1rem,
-       "20px": 1.25rem,
-       "30px": 1.875rem,
-       "36px": 2.25rem,
-       "42px": 2.625rem
+        "12px": .75rem,
       ))
     ),
     "line-height": (
@@ -47,12 +41,6 @@ $utilities: map-merge(
         auto: auto,
         "120px": 120px
       ))
-    ),
-    "padding-top": (
-      responsive: true,
-      property: padding-top,
-      class: pt,
-      values: $spacers
     ),
     "z-index": (
         property: z-index,

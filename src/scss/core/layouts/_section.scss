@@ -67,8 +67,9 @@
 
   &-about { 
     img { 
-      @include media-breakpoint-down(lg) { 
+      @include media-breakpoint-down(xxl) { 
         max-width: 100%; 
+
       }
      }
   }

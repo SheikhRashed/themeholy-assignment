@@ -304,7 +304,7 @@
   thApp.Custom.init = function () {
     thApp.Addons.aos();
     thApp.Navbar.sticky('.sr-header'); 
-    thApp.Custom.backToTop('.scroll-top')
+    // thApp.Custom.backToTop('.scroll-top')
     thApp.Custom.preLoader('.sr-preloader');
     thApp.Custom.currentYear('#currentYear');
     thApp.Addons.particlesJS('#sr-particle-init');
