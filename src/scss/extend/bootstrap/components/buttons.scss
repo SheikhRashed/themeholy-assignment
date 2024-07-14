@@ -1,7 +1,7 @@
 .btn {
   --#{$prefix}gradient: null;
  
-  //  --#{$prefix}btn-color: #fff;
+   --#{$prefix}btn-color: #fff;
   //  --#{$prefix}btn-active-color: #fff;
  
   //  --#{$prefix}btn-font-size: .8125rem;
@@ -9,23 +9,23 @@
   //  --#{$prefix}border-radius-sm: var(--#{$prefix}border-radius);
   //  --#{$prefix}border-radius-lg: var(--#{$prefix}border-radius);
  
-   &-sm {
-     --sr-btn-line-height: 1;
-     --#{$prefix}btn-padding-x: 1rem;
-     --#{$prefix}btn-padding-y: .875rem;
-     --#{$prefix}btn-font-size: .75rem;
-   }
+  //  &-sm {
+  //    --sr-btn-line-height: 1;
+  //    --#{$prefix}btn-padding-x: 1rem;
+  //    --#{$prefix}btn-padding-y: .875rem;
+  //    --#{$prefix}btn-font-size: .75rem;
+  //  }
  
-   &-lg {
-     --#{$prefix}btn-padding-y: .625rem;
-     --#{$prefix}btn-padding-x: 0.75rem;
+  //  &-lg {
+  //    --#{$prefix}btn-padding-y: .625rem;
+  //    --#{$prefix}btn-padding-x: 0.75rem;
  
-     --#{$prefix}btn-font-size: .875rem;
-   }
+  //    --#{$prefix}btn-font-size: .875rem;
+  //  }
  
-   &-link { 
-     --#{$prefix}btn-font-size: .875rem;
-   }
+  //  &-link { 
+  //    --#{$prefix}btn-font-size: .875rem;
+  //  }
  
  
   //  @each $color, $value in $theme-colors {

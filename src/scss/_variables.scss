@@ -63,7 +63,7 @@
  $gray-600: #6c757d !default;
  $gray-700: #495057 !default;
  $gray-800: #343a40 !default;
- $gray-900:  #141414;
+ $gray-900: #141414;
  $black:    #000 !default;
  // scss-docs-end gray-color-variables
  
@@ -99,6 +99,7 @@ $font-family-base: $font-family-sans-serif-secondary;
  
  $font-weight-normal:          400;
  $font-weight-medium:          500;
+ $font-weight-semibold:        600;
  $font-weight-bold:            700;
  
  // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
@@ -106,7 +107,7 @@ $font-family-base: $font-family-sans-serif-secondary;
  $font-size-root:              null !default;
  $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
  
- $line-height-base:            1.875;
+ $line-height-base:            1.625;
  
  
  // scss-docs-start headings-variables
@@ -120,9 +121,9 @@ $font-family-base: $font-family-sans-serif-secondary;
 
 
  $headings-font-family:        $font-family-sans-serif;
- $headings-font-weight:        $font-weight-medium;
+ $headings-font-weight:        $font-weight-semibold;
 //  $headings-line-height:        1.4;
- $headings-color:              $dark;
+ $headings-color:              #1D2229;
  // scss-docs-end headings-variables
  
  
@@ -187,7 +188,7 @@ $font-family-base: $font-family-sans-serif-secondary;
  // Settings for the `<body>` element.
  
  // $body-text-align:           null !default;
- $body-color:                $dark;
+ $body-color:                #6A6A6A;
  $body-bg:                   $white;
  
  $body-secondary-color:      #F9FAFB;
@@ -218,11 +219,11 @@ $font-family-base: $font-family-sans-serif-secondary;
  // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
  
  // scss-docs-start input-btn-variables
- $input-btn-padding-y:         1.4375rem;
+ $input-btn-padding-y:         20px;
  $input-btn-padding-x:         2.5rem;
  $input-btn-font-family:       $font-family-sans-serif-secondary;
  $input-btn-font-size:         14px;
- $input-btn-line-height:       $line-height-base !default;
+ $input-btn-line-height:       1 !default;
  
  // $input-btn-focus-width:         $focus-ring-width !default;
  // $input-btn-focus-color-opacity: $focus-ring-opacity !default;
@@ -315,8 +316,39 @@ $font-family-base: $font-family-sans-serif-secondary;
  $badge-padding-x:                   1.25rem;
  $badge-border-radius:               var(--#{$prefix}border-radius);
  // scss-docs-end badge-variables
+
+
+// scss-docs-start list-group-variables
+$list-group-color:                     #1D2229;
+// $list-group-bg:                     var(--#{$prefix}body-bg) !default;
+// $list-group-border-color:           var(--#{$prefix}border-color) !default;
+$list-group-border-width:              0rem;
+// $list-group-border-radius:          var(--#{$prefix}border-radius) !default;
+
+$list-group-item-padding-y:         .25rem;
+$list-group-item-padding-x:         0px;
+// fusv-disable
+// $list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
+// $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
+// fusv-enable
+
+$list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
+// $list-group-active-color:           $component-active-color !default;
+// $list-group-active-bg:              $component-active-bg !default;
+// $list-group-active-border-color:    $list-group-active-bg !default;
+
+// $list-group-disabled-color:         var(--#{$prefix}secondary-color) !default;
+// $list-group-disabled-bg:            $list-group-bg !default;
+
+// $list-group-action-color:           var(--#{$prefix}secondary-color) !default;
+// $list-group-action-hover-color:     var(--#{$prefix}emphasis-color) !default;
+
+// $list-group-action-active-color:    var(--#{$prefix}body-color) !default;
+// $list-group-action-active-bg:       var(--#{$prefix}secondary-bg) !default;
+// scss-docs-end list-group-variables
  
- $form-select-indicator-color:       $white;
+ 
+$form-select-indicator-color:       $white;
 
 
 $sr-size: 3.5rem;
@@ -347,16 +379,10 @@ $sr-sizes: (
   *********************************************/
  
  $spacers: map-merge($spacers,(
-  "10px": .625rem,
-  "12px": .75rem,
-  "16px": 1rem,
-  "20px": 1.25rem,
-  "30px": 1.875rem,
-  "48px": 3rem,
-  "60px": 3.75rem,
-  "80px": 5rem,
-  "120px": 7.5rem,
-  "100px": 6.25rem
+  "30px": 30px,
+   "40px": 2.5rem,
+   "50px": 3.125rem,
+   "80px": 7.5rem,
  ));
 
  $theme-colors: map-merge($theme-colors,(

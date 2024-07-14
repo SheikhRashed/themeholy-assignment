@@ -220,11 +220,6 @@
     }
   }
 
-  thApp.Addons.apexChart = function() { 
-    let chart = new ApexCharts(document.querySelector("#chart"), chartOptions);
-    chart.render();
-  }
-
   thApp.Addons.aos = function () {
     AOS.init({
       disable: false,
@@ -308,7 +303,6 @@
 
   thApp.Custom.init = function () {
     thApp.Addons.aos();
-    thApp.Addons.apexChart();
     thApp.Navbar.sticky('.sr-header'); 
     thApp.Custom.backToTop('.scroll-top')
     thApp.Custom.preLoader('.sr-preloader');
