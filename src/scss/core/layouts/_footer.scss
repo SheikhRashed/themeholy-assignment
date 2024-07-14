@@ -1,0 +1,8 @@
+.#{$prefix}footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  @include media-breakpoint-up(lg) { 
+    padding: 80px 0px;
+  }
+
+}

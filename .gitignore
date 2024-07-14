@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*.map
+*.zip
+
+node_modules
+main/node_modules
+
+wip
+src/wip
+docs/wip
+landing/wip
+local
+server
+package
+dist
+dev-dist
+dist-ssr
+main/build
+*.local
+_server
+_package
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+vite.config.*.timestamp-*
+
+# Local Netlify folder
+.netlify

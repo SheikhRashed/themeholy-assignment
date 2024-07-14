@@ -1,0 +1,30 @@
+.scroll-top { 
+  right: 12px;
+  bottom: 70px;
+  width: 60px;
+  height: 60px;
+  z-index: 9999;
+  display: flex;
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s linear;
+  color: var(--#{$prefix}primary);
+  box-shadow: var(--#{$prefix}shadow);
+  background-color: var(--#{$prefix}white);
+
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+
+  &.active { 
+    opacity: 1;
+    user-select: all;
+    pointer-events: all;
+  }
+
+}

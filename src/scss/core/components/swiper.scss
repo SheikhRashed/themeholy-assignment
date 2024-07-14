@@ -1,0 +1,13 @@
+
+.swiper-button-next, .swiper-button-prev { 
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: var(--#{$prefix}primary);
+  box-shadow: var(--sr-box-shadow);
+
+}
+
+.swiper-button-next::after, .swiper-button-prev::after { 
+  font-size: 0px;
+}

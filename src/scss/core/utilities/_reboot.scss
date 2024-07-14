@@ -1,0 +1,108 @@
+html,
+body {
+
+  // // overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  background-color: var(--#{$prefix}body-bg);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+body {
+  min-width: 320px;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  font-family: $font-family-base;
+}
+
+ol,
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+// typography
+a {
+  text-decoration: none;
+}
+
+// components
+button {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+div,
+.card {
+  &[data-bg-image] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+div,
+.card {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+
+  p {
+    &:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.sr-letter-space { 
+  letter-spacing: 0.10em;
+}
+
+.cursor-pointer { 
+  cursor: pointer;
+}
+
+@if $enable-dark-mode {
+
+
+  @include color-mode(dark) {
+
+    --#{$prefix}body-color: rgba(255, 255, 255, 0.8);
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+      color: $white;
+    }
+  }
+}

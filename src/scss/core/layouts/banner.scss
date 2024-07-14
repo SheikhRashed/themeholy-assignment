@@ -1,0 +1,39 @@
+.#{$prefix}banner { 
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px;
+  background-color: var(--#{$prefix}primary);
+
+  @include media-breakpoint-up(lg) {
+    padding: 160px 0px;
+  }
+
+
+  &__content { 
+    z-index: 1;
+    position: relative;
+    padding: 120px 0px;
+
+    canvas { 
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+  &__counter { 
+
+    
+    @include media-breakpoint-up(lg) {
+      left: 24px;
+      bottom: 60px;
+      position: absolute;
+    }
+
+  }
+
+
+}

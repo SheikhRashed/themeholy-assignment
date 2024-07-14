@@ -1,0 +1,116 @@
+@use "sass:math";
+
+.#{$prefix}media {
+
+  --#{$prefix}media-fs: 1.125rem;
+  --#{$prefix}media-text-color: null;
+  
+  --#{$prefix}media-bg-color: null;
+
+  --#{$prefix}media-overflow: hidden;
+  --#{$prefix}media-position: relative;
+
+  --#{$prefix}media-width: #{$sr-size};
+  --#{$prefix}media-height: #{$sr-size};
+
+  --#{$prefix}media-size: #{$sr-size};
+  --#{$prefix}media-icon-size: 1.25rem;
+
+  --#{$prefix}media-border-size: 1px;
+  --#{$prefix}media-border-color: #{$body-bg};
+
+  --#{$prefix}media-border-radius: var(--#{$prefix}border-radius);
+
+  color: #fff; 
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--#{$prefix}media-text-color);
+  overflow: var(--#{$prefix}media-overflow);
+  position: var(--#{$prefix}media-position);
+  width: var(--#{$prefix}media-width) !important;
+  height: var(--#{$prefix}media-height) !important;
+  background-color: var(--#{$prefix}media-bg-color);
+  border-radius: var(--#{$prefix}media-border-radius);
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & > span {
+    font-size: var(--#{$prefix}media-fs);
+    font-weight: $font-weight-medium;
+  }
+
+  & > .icon {
+    font-size: var(--#{$prefix}media-icon-size);
+  }
+
+  & > svg { 
+    width: var(--#{$prefix}media-icon-size);
+    height: var(--#{$prefix}media-icon-size);
+  }
+
+
+  // size variants 
+
+  // &-sm { 
+  //   line-height: 1.2;
+
+  //   & > .icon { 
+  //     --#{$prefix}media-fs: .625rem;
+  //   }
+  // }
+
+  // &-lg { 
+  //   --#{$prefix}media-fs: 1.4rem;
+  // }
+
+
+  // media elements & modifiers
+  &-rounded {
+    --#{$prefix}media-border-radius: #{$border-radius-pill};
+  }
+
+  @each $size, $value in $sr-sizes {
+
+    &-#{$size} {
+      --#{$prefix}media-width: #{$value};
+      --#{$prefix}media-height: #{$value};
+      --#{$prefix}media-fs: calc(#{$value} / 3);
+      --#{$prefix}media-icon-size: calc(#{$value} / 2);
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      --#{$prefix}media-text-color: #fff;
+      --#{$prefix}media-bg-color: #{$value};
+    }
+
+    &-outline-#{$color} {
+      --#{$prefix}media-text-color: #fff;
+      --#{$prefix}media-bg-color: #{$value};
+    }
+
+    &-#{$color}-soft {
+      --#{$prefix}media-text-color: #{$value};
+      --#{$prefix}media-bg-color: #{mix($value, white, 20%)};
+    }
+
+  }
+
+
+  &.sr-media-outline-light {
+    --#{$prefix}media-border-size: 1px;
+    --#{$prefix}media-text-color: #fff;
+    --#{$prefix}media-bg-color: transparent;
+    --#{$prefix}media-border-color: var(--#{$prefix}white);
+
+    border: 1px solid var(--#{$prefix}white);
+
+  }
+
+}

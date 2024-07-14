@@ -1,0 +1,9 @@
+@each $color, $value in $theme-colors {
+  .text-bg-#{$color}-soft {
+    @include soft-variant-color($value);
+  }
+
+  .bg-#{$color}-soft {
+    @include soft-variant-color($value);
+  }
+}

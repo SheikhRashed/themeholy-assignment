@@ -1,0 +1,108 @@
+// include Kanit
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit Regular"),
+    local("Kanit-Regular"),
+    url("#{$fontPath}/kanit/Kanit-Regular.woff") format("woff"),
+    url("#{$fontPath}/kanit/Kanit-Regular.ttf") format("truetype"),
+    url("#{$fontPath}/kanit/Kanit-Regular.svg#Kanit-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit Medium"),
+    local("Kanit-Medium"),
+    url("#{$fontPath}/kanit/Kanit-Medium.woff") format("woff"),
+    url("#{$fontPath}/kanit/Kanit-Medium.ttf") format("truetype"),
+    url("#{$fontPath}/kanit/Kanit-Medium.svg#Kanit-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit SemiBold"),
+    local("Kanit-SemiBold"),
+    url("#{$fontPath}/kanit/Kanit-SemiBold.woff") format("woff"),
+    url("#{$fontPath}/kanit/Kanit-SemiBold.ttf") format("truetype"),
+    url("#{$fontPath}/kanit/Kanit-SemiBold.svg#Kanit-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src:
+    local("Kanit Bold"),
+    local("Kanit-Bold"),
+    url("#{$fontPath}/kanit/Kanit-Bold.woff") format("woff"),
+    url("#{$fontPath}/kanit/Kanit-Bold.ttf") format("truetype"),
+    url("#{$fontPath}/kanit/Kanit-Bold.svg#Kanit-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+// include archivo
+@font-face {
+  font-family: "Archivo";
+  src:
+    local("Archivo Regular"),
+    local("Archivo-Regular"),
+    url("#{$fontPath}/archivo/Archivo-Regular.woff") format("woff"),
+    url("#{$fontPath}/archivo/Archivo-Regular.ttf") format("truetype"),
+    url("#{$fontPath}/archivo/Archivo-Regular.svg#Archivo-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src:
+    local("Archivo Medium"),
+    local("Archivo-Medium"),
+    url("#{$fontPath}/archivo/Archivo-Medium.woff") format("woff"),
+    url("#{$fontPath}/archivo/Archivo-Medium.ttf") format("truetype"),
+    url("#{$fontPath}/archivo/Archivo-Medium.svg#Archivo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src:
+    local("Archivo SemiBold"),
+    local("Archivo-SemiBold"),
+    url("#{$fontPath}/archivo/Archivo-SemiBold.woff") format("woff"),
+    url("#{$fontPath}/archivo/Archivo-SemiBold.ttf") format("truetype"),
+    url("#{$fontPath}/archivo/Archivo-SemiBold.svg#Archivo-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src:
+    local("Archivo Bold"),
+    local("Archivo-Bold"),
+    url("#{$fontPath}/archivo/Archivo-Bold.woff") format("woff"),
+    url("#{$fontPath}/archivo/Archivo-Bold.ttf") format("truetype"),
+    url("#{$fontPath}/archivo/Archivo-Bold.svg#Archivo-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

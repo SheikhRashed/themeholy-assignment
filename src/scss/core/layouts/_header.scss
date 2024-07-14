@@ -1,0 +1,196 @@
+.#{$prefix}header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+
+  &.is-sticky { 
+    .container { 
+      // --sr-gutter-x: 20px;
+      padding: 16px var(--#{$prefix}gutter-x);
+      background-color: var(--#{$prefix}white);
+
+      
+      @include media-breakpoint-up(sm) { 
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: var(--sr-box-shadow);
+
+      }
+
+    }
+
+    .#{$prefix}header{
+      &__brand { 
+        img { 
+          &.logo-light { 
+            display: none;
+          }
+
+          &.logo-dark { 
+            display: block;
+          }
+        }
+      }
+
+      &__content { 
+        .sr-media-outline-light { 
+          color: var(--sr-dark);
+          border: 1px solid var(--sr-dark);
+        }
+
+        .btn-outline-light { 
+          --sr-btn-color: var(--#{$prefix}dark);
+          --sr-btn-hover-color: var(--#{$prefix}white);
+          --sr-btn-active-color: var(--#{$prefix}white);
+
+          --sr-btn-hover-bg: var(--#{$prefix}dark);
+          --sr-btn-active-bg: var(--#{$prefix}dark);
+          --sr-btn-border-color: var(--#{$prefix}dark);
+        }
+
+        .dropdown { 
+          button { 
+            color: var(--#{$prefix}dark);
+            .line { 
+              background-color: var(--#{$prefix}dark);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container { 
+    display: flex;
+    border-radius: 0px;
+    align-items: center;
+    transition: all 0.3s linear;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) { 
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    @include media-breakpoint-up(sm) { 
+      margin-top: 30px;
+    }
+  }
+
+
+  &__brand { 
+
+    img { 
+      &.logo-dark { 
+        display: none;
+      }
+    }
+  }
+
+  &__content { 
+    gap: 12px;
+    display: flex;    
+    align-items: center;
+
+    .sr-media { 
+      --sr-media-width: 2.625rem;
+      --sr-media-height: 2.625rem;
+      --sr-media-icon-size: .875rem;
+    }
+
+    .dropdown{ 
+
+      button { 
+        font-size: 28px;
+        vertical-align: middle;
+        color: var(--#{$prefix}white);
+
+        &[data-bs-toggle="dropdown"] { 
+          
+          .line{
+            width: 30px;
+            height: 3px;
+            display: block;
+            background-color: var(--#{$prefix}white);
+            -webkit-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+
+            :hover{
+              cursor: pointer;
+            }
+
+            &:nth-child(2) { 
+                margin: 8px auto;
+            }
+
+          }
+
+          &.show .line:nth-child(2){
+            opacity: 0;
+          }
+          
+          &.show .line:nth-child(1){
+            -webkit-transform: translateY(13px) rotate(45deg);
+            -ms-transform: translateY(13px) rotate(45deg);
+            -o-transform: translateY(13px) rotate(45deg);
+            transform: translateY(13px) rotate(45deg);
+          }
+          
+          &.show .line:nth-child(3){
+            -webkit-transform: translateY(-13px) rotate(-45deg);
+            -ms-transform: translateY(-13px) rotate(-45deg);
+            -o-transform: translateY(-13px) rotate(-45deg);
+            transform: translateY(-13px) rotate(-45deg);
+          }
+        }
+
+
+      }
+
+      &-menu { 
+        --sr-dropdown-min-width: 315px;
+        @include media-breakpoint-up(sm) { 
+          --sr-dropdown-min-width: 24.25rem;
+        }
+        .body { 
+          ul { 
+            li { 
+              padding: 8px 0px;
+
+              &:nth-last-child(1){ 
+                padding-bottom: 0px;
+              }
+
+              &:not(:last-child) { 
+                a { 
+                  font-size: 18px;
+                  color: #191618;
+                  line-height: 1.2;
+
+                  &:hover { 
+                    color: var(--#{$prefix}primary);
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+
+   & > li {
+      &:not(:last-child) { 
+        @include media-breakpoint-down(sm) { 
+          display: none;
+        }
+      }
+    }
+
+  }
+
+}

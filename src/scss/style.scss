@@ -1,0 +1,25 @@
+/********************************************
+  ## Version:- 1.0.0   
+  ## P.Name: WPPoolAssignment 
+  ## Updated:- 10.07.2024 
+  ## Author:- Sheikh Rashed 
+  ## A.URL:- https://github.com/SheikhRashed 
+  
+ *********************************************/
+
+ 
+// include variables
+@import "variables";
+
+// include fonts
+@import "core/fonts/fonts";
+
+// extend bootstrap
+@import "extend/bootstrap/bootstrap";
+@import "extend/bootstrap/extend";
+
+// include vendores
+@import "vendors/bundle";
+
+// include core style
+@import "core/style";

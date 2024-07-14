@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="author-name">
+    <meta name="theme-color" content="#6576FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themeholy - Assignment</title>
+    <link rel="icon" href="{{imageRoot}}favicon.ico" sizes="48x48">
+    <link rel="stylesheet" href="{{assetRoot}}css/style.css?v{{VER}}">
+  </head>
+  <body data-navbar-collapse="lg" class="{{bodyClass}}">
+    
+    <div class="sr-root">
+
+      {% block nmHeader %}{% endblock %}
+
+      {% block nmContent %}{% endblock %}
+
+      {% block nmFooter %}{% endblock %}
+
+      {# layout content  #}
+      {# {% include "_partial/components/loader.njk" %}
+      <a href="#" class="scroll-top shadow border">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a> #}
+
+
+    </div>
+    <script src="{{assetRoot}}js/bundle.js?v{{VER}}"></script>
+    <script src="{{assetRoot}}js/scripts.js?v{{VER}}"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+@mixin soft-variant-color($color) {
+  $background: mix($color, white, 20%); // Adjust the percentage to control the softness
+  $lightness: lightness($background);
+  $textColor: if($lightness > 50, $color, white);
+
+  color: $textColor !important;
+  background-color: $background !important;
+}

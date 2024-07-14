@@ -1,0 +1,154 @@
+.btn {
+  --#{$prefix}gradient: null;
+ 
+  //  --#{$prefix}btn-color: #fff;
+  //  --#{$prefix}btn-active-color: #fff;
+ 
+  //  --#{$prefix}btn-font-size: .8125rem;
+  //  --#{$prefix}btn-font-weight: #{$font-weight-medium};
+  //  --#{$prefix}border-radius-sm: var(--#{$prefix}border-radius);
+  //  --#{$prefix}border-radius-lg: var(--#{$prefix}border-radius);
+ 
+   &-sm {
+     --sr-btn-line-height: 1;
+     --#{$prefix}btn-padding-x: 1rem;
+     --#{$prefix}btn-padding-y: .875rem;
+     --#{$prefix}btn-font-size: .75rem;
+   }
+ 
+   &-lg {
+     --#{$prefix}btn-padding-y: .625rem;
+     --#{$prefix}btn-padding-x: 0.75rem;
+ 
+     --#{$prefix}btn-font-size: .875rem;
+   }
+ 
+   &-link { 
+     --#{$prefix}btn-font-size: .875rem;
+   }
+ 
+ 
+  //  @each $color, $value in $theme-colors {
+  //    &-#{$color},
+  //    &-#{$color}-soft {
+  //      --#{$prefix}btn-focus-box-shadow: #{0 0 $focus-ring-blur $focus-ring-width rgba($value, 0.25)};
+ 
+  //      &:focus {
+  //        box-shadow: var(--#{$prefix}btn-focus-box-shadow);
+  //      }
+  //    }
+ 
+  //    &-#{$color} {
+  //      --#{$prefix}btn-bg: #{$value};
+  //      --#{$prefix}btn-color: #{$white};
+  //      --#{$prefix}btn-hover-color: var(--#{$prefix}btn-color);
+  //      --#{$prefix}btn-active-color: var(--#{$prefix}btn-color);
+  //    }
+ 
+  //    &-#{$color}-soft {
+  //      --#{$prefix}btn-color: #{$value};
+  //      --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+  //      --#{$prefix}btn-active-color: var(--#{$prefix}white);
+ 
+  //      --#{$prefix}btn-bg: #{mix($value, $white, 15%)};
+  //      --#{$prefix}btn-hover-bg: #{$value};
+  //      --#{$prefix}btn-active-bg: #{$value};
+ 
+  //      --#{$prefix}btn-hover-border-color: #{$value};
+  //      --#{$prefix}btn-active-border-color: #{$value};
+ 
+  //      &:focus-visible {
+  //        --#{$prefix}btn-hover-color: #{$value};
+  //        --#{$prefix}btn-hover-bg: #{mix($value, $white, 15%)};
+  //      }
+  //    }
+ 
+  //    &-outline-#{$color} {
+  //      --#{$prefix}btn-color: #{$value};
+  //      --#{$prefix}btn-hover-color: #{$white};
+  //      --#{$prefix}btn-active-color: #{$white};
+  //    }
+  //  }
+ 
+  //  &-primary,
+  //  &-primary-soft {
+  //    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-active-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-focus-box-shadow: var(--#{$prefix}primary-box-shadow-ring);
+ 
+  //    &:focus {
+  //      box-shadow: var(--#{$prefix}btn-focus-box-shadow);
+  //    }
+  //  }
+ 
+  //  &-primary {
+  //    --#{$prefix}btn-bg: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-hover-bg: var(--#{$prefix}primary-hover-bg);
+  //    --#{$prefix}btn-active-bg: var(--#{$prefix}primary-active-bg);
+  //    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary-hover-border);
+ 
+  //  }
+ 
+  //  &-outline-primary {
+  //    --#{$prefix}btn-color: var(--#{$prefix}primary);
+  //   --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+  //   --#{$prefix}btn-disabled-color: var(--#{$prefix}primary-hover-bg);
+ 
+  //    --#{$prefix}btn-hover-bg: var(--#{$prefix}primary-hover-bg);
+  //    --#{$prefix}btn-active-bg: var(--#{$prefix}primary-active-bg);
+ 
+  //    --#{$prefix}btn-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-active-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-disabled-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary-hover-border);
+  //  }
+ 
+  //  &-primary-soft {
+  //    --#{$prefix}btn-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-hover-color: var(--#{$prefix}white);
+  //    --#{$prefix}btn-active-color: var(--#{$prefix}white);
+ 
+  //    --#{$prefix}btn-bg: var(--#{$prefix}primary-soft);
+  //    --#{$prefix}btn-hover-bg: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-active-bg: var(--#{$prefix}primary);
+ 
+  //    --#{$prefix}btn-border-color: transparent;
+  //    --#{$prefix}btn-hover-border-color: var(--#{$prefix}primary);
+  //    --#{$prefix}btn-active-border-color: var(--#{$prefix}primary);
+ 
+  //    &:focus-visible {
+  //      --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
+  //      --#{$prefix}btn-hover-bg: var(--#{$prefix}primary-soft);
+  //    }
+  //  }
+ 
+  //  &-outline-light { 
+  //   --sr-btn-hover-color: var(--#{$prefix}dark);
+  //   --sr-btn-active-color: var(--#{$prefix}dark);
+    
+  //    &:hover { 
+  //      --#{$prefix}btn-color: #{$dark};
+  //      --#{$prefix}btn-border-color: transparent;    
+
+  //      .icon { 
+  //        color: var(--#{$prefix}dark);
+  //      }
+  //    }
+  //  }
+ 
+  //  &-outline-dark { 
+  //   --#{$prefix}btn-border-color: var(--#{$prefix}border-color);
+ 
+  //   .icon { 
+  //    color: var(--#{$prefix}secondary);
+  //   }
+ 
+  //    &:hover { 
+  //      .icon { 
+  //        color: #fff;
+  //      }
+  //    }
+  //  }
+ }
+
+ 
