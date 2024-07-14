@@ -59,13 +59,12 @@
  $gray-200: #e9ecef !default;
  $gray-300: #D8DDE1;
  $gray-400: #ced4da !default;
- $gray-500: #adb5bd !default; 
+ $gray-500: #AFB8C7; 
  $gray-600: #6c757d !default;
  $gray-700: #495057 !default;
- $gray-800: #343a40 !default;
+ $gray-800: #383D46;
  $gray-900: #141414;
  $black:    #000 !default;
-
  // scss-docs-end gray-color-variables
  
  // scss-docs-start color-variables
@@ -118,7 +117,7 @@ $font-family-base: $font-family-sans-serif-secondary;
  $h3-font-size:                $font-size-base * 1.75 !default;
  $h4-font-size:                $font-size-base * 1.5 !default;
  $h5-font-size:                $font-size-base * 1.25 !default;
- $h6-font-size:                $font-size-base !default;
+ $h6-font-size:                 1.125rem;
 
 
  $headings-font-family:        $font-family-sans-serif;
@@ -160,27 +159,6 @@ $font-family-base: $font-family-sans-serif-secondary;
  
  // scss-docs-start spacer-variables-maps
  $spacer: 1rem;
- // $spacers: (
- //   0: 0,
- //   1: $spacer * .25,
- //   2: $spacer * .5,
- //   3: $spacer,
- //   4: $spacer * 1.5,
- //   5: $spacer * 3,
- // ) !default;
- 
-//  $prefix-spacers: (
-//   "10px": .625rem,
-//    "12px": .75rem,
-//    "16px": 1rem,
-//    "20px": 1.25rem,
-//    "30px": 1.875rem,
-//    "48px": 3rem,
-//    "60px": 3.75rem,
-//    "80px": 5rem,
-//    "120px": 7.5rem,
-//    "100px": 6.25rem
-//  );
  // scss-docs-end spacer-variables-maps
  
  
@@ -361,6 +339,8 @@ $sr-sizes: (
   lg: $sr-size * 1.5,
   xl: $sr-size * 3,
   "34px": 2.125rem,
+  "40px": 2.5rem,
+  "80px": 5rem,
   "88px": 5.5rem,
   "250px": 15.625rem,
   "270px": 16.875rem,
@@ -383,15 +363,20 @@ $sr-sizes: (
   *********************************************/
  
  $spacers: map-merge($spacers,(
+   "10px": 10px,
+   "27px": 27px,
    "30px": 30px,
    "40px": 2.5rem,
    "50px": 3.125rem,
    "60px": 3.75rem,
+   "68px": 4.25rem,
    "80px": 7.5rem,
  ));
 
  $theme-colors: map-merge($theme-colors,(
   "gray-300": $gray-300,
+  "gray-500": $gray-500,
+  "gray-800": $gray-800,
  ))
  
   

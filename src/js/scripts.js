@@ -299,7 +299,18 @@
       window.addEventListener("scroll", ()=> {
           window.scrollY > 60 ? element.classList.add("active") : element.classList.remove("active")
       })
-}
+  }
+
+  thApp.Custom.setBGImage = function (selector) {
+    let elements = document.querySelectorAll(`[${selector}]`);
+
+    elements.forEach((element) => {
+      let image = element.getAttribute(selector);
+      let depthLevel = element.getAttribute('data-img-root') || 'images';
+
+      element.style.backgroundImage = `url(${depthLevel}${image})`;
+    });
+  };
 
   thApp.Custom.init = function () {
     thApp.Addons.aos();
@@ -307,6 +318,7 @@
     // thApp.Custom.backToTop('.scroll-top')
     thApp.Custom.preLoader('.sr-preloader');
     thApp.Custom.currentYear('#currentYear');
+    thApp.Custom.setBGImage('data-bg-image');
     thApp.Addons.particlesJS('#sr-particle-init');
     thApp.Addons.swiperCarousel('.sr-swiper-init');
   }

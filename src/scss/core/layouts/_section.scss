@@ -29,14 +29,13 @@
 
 
     &::before { 
-      left: -50%;
+      right: 100%;
     }
 
     &::after { 
-      right: -50%;
+      left: 100%;
     }
-
-
+    
     &.start { 
       margin-left: 50px;
 
