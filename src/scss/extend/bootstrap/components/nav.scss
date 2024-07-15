@@ -1,16 +1,12 @@
 .nav-pills  { 
-
-
   @include media-breakpoint-down(xl) {
      overflow-x: scroll;
   }
-
 
   .nav-link { 
     color: #1D2229;
     font-family: $font-family-sans-serif;
     background-color: var(--#{$prefix}gray-300);
-
 
     & + img { 
       display: none;

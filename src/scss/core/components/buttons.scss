@@ -1,5 +1,8 @@
 .btn { 
 
+  --#{$prefix}gradient: null;
+  --#{$prefix}btn-color: #fff;
+
   gap: .375rem; 
   font-weight: bold;
   align-items: center;

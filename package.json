@@ -30,7 +30,7 @@
     "gulp-strip-comments": "^2.6.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "sass": "^1.68.0",
+    "sass": "1.77.6",
     "uglify-js": "^3.17.4",
     "yargs": "^17.7.2"
   },
