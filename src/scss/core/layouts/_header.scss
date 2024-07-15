@@ -14,8 +14,6 @@
     }
   }
 
-
-
   .container-fluid { 
     @include media-breakpoint-up(xl) {
       --sr-gutter-x: 10rem;
@@ -32,8 +30,6 @@
       transition: all 0.1s linear;
       border-bottom: 1px solid #383D46;
     }
-
-
 
     ul { 
       display: flex;
