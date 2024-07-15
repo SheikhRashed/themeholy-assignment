@@ -7,6 +7,8 @@ $utilities: map-merge(
       class: fs,
       values: map-merge($font-sizes, (
         "12px": .75rem,
+        "24px": 1.5rem,
+        "48px": 48px,
       ))
     ),
     "line-height": (

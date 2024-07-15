@@ -47,12 +47,12 @@
         let _direction = $this.dataset.direction ? $this.dataset.direction : 'horizontal';
         let _breakpoints = $this.dataset.breakpoints ? JSON.parse($this.dataset.breakpoints) : null;
         let _autoplay = $this.dataset.autoplay ? JSON.parse($this.dataset.autoplay) : false;
-        let _loop = $this.dataset.loop ? JSON.parse($this.dataset.loop) : true;
+        let _loop = $this.dataset.loop ? JSON.parse($this.dataset.loop) : false;
         let _centeredSlides = $this.dataset.centeredslides ? JSON.parse($this.dataset.centeredslides) : false;
         let _slidesPerView = $this.dataset.slidesperview ? parseInt($this.dataset.slidesperview) : "auto";
         let _speed = $this.dataset.speed ? parseInt($this.dataset.speed) : 300;
         let _spaceBetween = $this.dataset.spaceBetween ? parseInt($this.dataset.spaceBetween) : 12;
-        let _effect = $this.dataset.effect ? $this.dataset.effect : 'slide';
+        let _effect = $this.dataset.effect ? $this.dataset.effect : 'flip';
         let _scrollbar = $this.dataset.scrollbar ? JSON.parse($this.dataset.scrollbar) : false;
 
         let swiper = new Swiper($this, {

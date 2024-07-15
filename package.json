@@ -28,7 +28,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-string-replace": "^1.1.2",
     "gulp-strip-comments": "^2.6.0",
-    "gulp-uglify": "^3.0.2",
+    // "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "sass": "^1.68.0",
     "uglify-js": "^3.17.4",

@@ -35,12 +35,14 @@
     &::after { 
       left: 100%;
     }
-    
+
     &.start { 
       margin-left: 50px;
 
       &::after { 
-        display: none;
+        @include media-breakpoint-up(lg)  { 
+          display: none;
+        }
       }
     }
 

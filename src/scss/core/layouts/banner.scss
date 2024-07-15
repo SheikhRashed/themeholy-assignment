@@ -1,39 +1,77 @@
 .#{$prefix}banner { 
   overflow: hidden;
   position: relative;
-  padding-bottom: 60px;
-  background-color: var(--#{$prefix}primary);
+  padding: 0px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
-  @include media-breakpoint-up(lg) {
-    padding: 160px 0px;
-  }
+  &-img { 
 
 
-  &__content { 
-    z-index: 1;
-    position: relative;
-    padding: 120px 0px;
+    @include media-breakpoint-down(xl) { 
+      display: none;
+    }
 
-    canvas { 
-      top: 50%;
-      left: 50%;
+    @include media-breakpoint-up(xl) { 
+
+      right: 0px;
+      bottom: 0px;
       z-index: -1;
       position: absolute;
-      transform: translate(-50%, -50%);
+    }
+
+    img{ 
+
+      @include media-breakpoint-up(xl) { 
+        height: auto;
+        width: 1140px;
+  
+      }
+    }
+
+    &.one { 
+
+      @include media-breakpoint-up(xl) { 
+
+        bottom: -290px;
+      }
+
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        right: -100px;
+      }
+
+      @media (min-width: 1401px) {
+        right: 70px;
+      }
+
+    }
+
+    &.three { 
+
+      img { 
+
+        @include media-breakpoint-up(xl) { 
+          width: 821px;
+        }
+      }
     }
   }
 
-
-  &__counter { 
-
-    
-    @include media-breakpoint-up(lg) {
-      left: 24px;
-      bottom: 60px;
-      position: absolute;
-    }
-
+  .swiper {
+     .swiper-slide { 
+       padding: 120px 0px;
+       @include media-breakpoint-up(lg) { 
+        padding: 240px 0px;
+      }
+     }
   }
 
-
+  .sr-section-subtitle { 
+    &.start { 
+      &::after { 
+        display: none !important;
+      }
+    }
+  }
 }
