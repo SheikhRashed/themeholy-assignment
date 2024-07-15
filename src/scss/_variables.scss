@@ -235,9 +235,9 @@ $font-family-base: $font-family-sans-serif-secondary;
  
  // scss-docs-end input-btn-variables
 
-
+ $input-bg:                              #171717;
+ $input-border-color:                    #2F343B;
  $input-placeholder-color:               var(--#{$prefix}gray);
- 
  
  
  // Buttons
@@ -335,7 +335,7 @@ $list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
 // scss-docs-end list-group-variables
  
  
-$form-select-indicator-color:       $white;
+$form-select-indicator-color:          #6B7586;
 
 
 $sr-size: 3.5rem;
@@ -348,6 +348,7 @@ $sr-sizes: (
   xl: $sr-size * 3,
   "34px": 2.125rem,
   "40px": 2.5rem,
+  "56px": 3.5rem,
   "80px": 5rem,
   "88px": 5.5rem,
   "250px": 15.625rem,
@@ -378,7 +379,8 @@ $sr-sizes: (
    "50px": 3.125rem,
    "60px": 3.75rem,
    "68px": 4.25rem,
-   "80px": 7.5rem,
+   "80px": 5rem,
+   "120px": 7.5rem
  ));
 
  $theme-colors: map-merge($theme-colors,(
